@@ -2,7 +2,11 @@ sudo: required
 language: ruby
 rvm:
 - 2.4.3
+- 2.5.0
 - ruby-head
+matrix:
+  allow_failures:
+  - rvm: ruby-head
 script:
 - kitchen converge travis
 - sudo su -l $USER -c "cd $(pwd) && rvm use ${RUBY_VERSION/ruby-/} && kitchen test default"
