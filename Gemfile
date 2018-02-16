@@ -6,7 +6,7 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 gemspec
 
 group :test do
-  gem 'test-kitchen'
+  gem 'kitchen-lxd_sling'
   gem 'kitchen-inspec'
   gem 'berkshelf'
 end
