@@ -1,0 +1,5 @@
+suites:
+  - name: travis
+    run_list: travis::default
+    driver:
+      name: exec

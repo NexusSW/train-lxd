@@ -8,13 +8,10 @@ provisioner:
 platforms:
   - name: ubuntu-16.04
 
+#    verifier:
+#      name: inspec
+
 suites:
   - name: default
     run_list:
     transport: lxd
-#    verifier:
-#      name: inspec
-  - name: travis
-    run_list: travis::default
-    driver:
-      name: exec
