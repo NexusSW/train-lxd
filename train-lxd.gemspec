@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'train', '~> 0.12'
+  spec.add_dependency 'train', '~> 0.12' # TODO: temporary.  Get my gem stable and working on < 1.0 and then we'll bump to 1.0 & fix whatever needed (1.0 is brand new)
   spec.add_dependency 'lxd-common', '~> 0.9'
 
   spec.add_development_dependency 'bundler'
