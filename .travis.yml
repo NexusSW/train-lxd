@@ -9,4 +9,5 @@ matrix:
   - rvm: ruby-head
 script:
 - KITCHEN_LOCAL_YAML=.kitchen.travis.yml kitchen converge travis
+- sudo rm -rf ~/.config/lxc
 - sudo su -l $USER -c "cd $(pwd) && rvm use ${RUBY_VERSION/ruby-/} && kitchen test default"
