@@ -1,6 +1,6 @@
 suites:
   - name: travis
     run_list: travis::default
-    provisioner: chef-solo
+    provisioner: chef_solo
     driver:
       name: exec
