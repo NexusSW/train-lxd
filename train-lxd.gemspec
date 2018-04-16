@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'kitchen-lxd_sling', '~> 0.5' # transport injection version
-  spec.add_development_dependency 'kitchen-inspec', '~> 0.22', '<= 0.23' # transport injection version
+  spec.add_development_dependency 'kitchen-inspec', '~> 0.22' # transport injection version
+  spec.add_development_dependency 'inspec', '< 3' # transport injection version
   spec.add_development_dependency 'berkshelf'
 end
