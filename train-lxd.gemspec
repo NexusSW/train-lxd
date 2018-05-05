@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'kitchen-inspec', '~> 0.22' # transport injection version
   spec.add_development_dependency 'inspec', '< 2' # TODO: temporary
   spec.add_development_dependency 'berkshelf'
+  spec.add_development_dependency 'test-kitchen', '~> 1.19'
 end
