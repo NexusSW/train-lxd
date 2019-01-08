@@ -7,6 +7,9 @@ rvm:
 matrix:
   allow_failures:
   - rvm: ruby-head
+before_install:
+- gem uninstall bundler
+- gem install bundler -v 1.17.3
 script:
 - unset BUNDLE_GEMFILE
 - KITCHEN_LOCAL_YAML=.kitchen.travis.yml kitchen converge travis
