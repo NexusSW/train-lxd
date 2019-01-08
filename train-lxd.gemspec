@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'train', '~> 0.12' # TODO: temporary.  Get my gem stable and working on < 1.0 and then we'll bump to 1.0 & fix whatever needed (1.0 is brand new)
   spec.add_dependency 'lxd-common', '~> 0.9'
 
-  spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'bundler', '~> 1.16'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'kitchen-lxd_sling', '~> 0.5' # transport injection version
