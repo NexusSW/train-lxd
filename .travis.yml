@@ -7,7 +7,7 @@ matrix:
   allow_failures:
   - rvm: ruby-head
 before_install:
-- gem uninstall bundler
+- gem uninstall bundler || true
 - gem install bundler -v 1.17.3
 script:
 - unset BUNDLE_GEMFILE
